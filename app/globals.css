@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 28 20% 88%;
+    --foreground: 180 100% 16%;
+    --card: 28 20% 88%;
+    --card-foreground: 180 100% 16%;
+    --popover: 28 20% 88%;
+    --popover-foreground: 180 100% 16%;
+    --primary: 9 75% 57%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 28 20% 85%;
+    --secondary-foreground: 180 100% 16%;
+    --muted: 28 20% 85%;
+    --muted-foreground: 180 50% 30%;
+    --accent: 28 20% 85%;
+    --accent-foreground: 180 100% 16%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 28 20% 80%;
+    --input: 28 20% 80%;
+    --ring: 9 75% 57%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-weight: 400;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Spectral', serif;
+    font-weight: 500;
+    @apply text-foreground;
+    /* Better line height for mobile readability */
+    line-height: 1.2;
+  }
+  p, a, button, input, textarea, li, span, div {
+    font-family: 'Ysabeau Office', sans-serif;
+    @apply text-foreground;
+  }
+  
+  /* Mobile-specific improvements */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: clamp(2rem, 8vw, 4rem);
+    }
+    h2 {
+      font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+    h3 {
+      font-size: clamp(1.25rem, 5vw, 2rem);
+    }
+    
+    /* Ensure text is readable on small screens */
+    p {
+      font-size: clamp(0.875rem, 4vw, 1rem);
+      line-height: 1.6;
+    }
+    
+    /* Better button sizing on mobile */
+    button {
+      min-height: 44px; /* iOS recommended touch target */
+      min-width: 44px;
+    }
+    
+    /* Improve form inputs on mobile */
+    input, textarea {
+      font-size: 16px; /* Prevent zoom on iOS */
+    }
+  }
+}
+
+.hero-carousel {
+  @apply relative h-screen w-full overflow-hidden;
+}
+
+.hero-slide {
+  @apply absolute inset-0 h-full w-full opacity-0 transition-opacity duration-1000;
+}
+
+.hero-slide.active {
+  @apply opacity-100;
+}
+
+.hero-content {
+  @apply absolute inset-0 flex items-center justify-center bg-black/30 text-white;
+  /* Better padding on mobile */
+  padding: 1rem;
+}
+
+/* Mobile-specific hero adjustments */
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 70vh; /* Shorter on mobile to show more content */
+  }
+  
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Ensure images don't overflow on mobile */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Better spacing for mobile cards */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Fix for mobile viewport height issues */
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus states for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid theme('colors.rust.DEFAULT');
+  outline-offset: 2px;
+}
+
+/* article container styling */
+
+.article-container ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.article-container li {
+  margin-bottom: 8px;
+  position: relative;
+}
+.article-container li::before {
+  content: '•';
+  color: #005252;
+  position: absolute;
+  left: -20px;
+  font-size: 20px;
+}
+
+.article-container h2, .article-container h3 {
+  margin-top: 15px;
+}
+@media (max-width: 600px) {
+  .article-container {
+      padding: 15px;
+  }
+  .article-container h2 {
+      font-size: 20px;
+  }
+}
