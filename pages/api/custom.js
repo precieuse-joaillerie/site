@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { firstName, lastName, birthDate, country, email, occasion, description } = await req.json();
+    const { firstName, lastName, birthDate, country, email, occasion, description } = await req.body;
     const html = `
       <div style="font-family: 'Helvetica, Arial, sans-serif'; color: #2a2765; padding: 20px;">
         <h1 style="font-size: 24px; margin-bottom: 20px;">Nouveau contact Pour le sur-mesure</h1>
@@ -35,14 +35,11 @@ export default async function handler(req, res) {
 
     if (!response.ok) {
       const error = await response.json();
-      return res.json({ error }, { status: response.status });
+      return res.status(response.status).json({ error });
     }
 
-    return res.json({ success: true }, { status: 200 });
+    return res.status(200).json({ success: true });
   } catch (error) {
-    return res.json(
-      { error: "Failed to send email" },
-      { status: 500 }
-    );
+    return res.status(500).json({ error: "Failed to send email" });
   }
 }

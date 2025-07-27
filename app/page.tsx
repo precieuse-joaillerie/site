@@ -36,43 +36,21 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* CTA Section */}
-      <section className="h-[387px] bg-powder/50">
-        <div className="flex h-full">
+      <section className="min-h-[387px] bg-powder/50 overflow-hidden">
+        <div className="flex h-full flex-col md:flex-row">
           {/* Photos */}
-          <div className="w-3/5 flex h-full">
-            <div className="w-1/4 h-full">
-              <img
-                src={images?.image10}
-                alt="Alliance en or"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="w-1/4 h-full">
-              <img
-                src={images?.image11}
-                alt="Création sur mesure"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="w-1/4 h-full">
-              <img
-                src={images?.image12}
-                alt="Atelier joaillerie"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="w-1/4 h-full">
-              <img
-                src={images?.image13}
-                alt="Bijou sur mesure"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-          </div>
+          <div className="w-full md:w-3/5 flex h-64 md:h-[400px]">
+  {[images?.image10, images?.image11, images?.image12, images?.image13].map((img, i) => (
+    <div key={i} className="w-1/4 h-full flex-shrink-0">
+      <img
+        src={img}
+        alt={`Image ${i + 1}`}
+        className="w-full h-full object-cover"
+        referrerPolicy="no-referrer"
+      />
+    </div>
+  ))}
+</div>
 
           {/* Content */}
           <motion.div
@@ -80,7 +58,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="w-2/5 flex flex-col justify-center px-16"
+            className="w-full md:w-2/5 flex flex-col justify-center px-4 md:px-16 py-8 md:py-0"
           >
             <h2 className="text-3xl md:text-4xl font-light mb-8 text-teal">
               {currentLanguage === "EN"
