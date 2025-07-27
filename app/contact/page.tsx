@@ -34,8 +34,9 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const { status } = await axios.post('/api/contact', formData);
-      if (![200, 201, 204].includes(status)) {
+      const response= await axios.post('/api/contact', formData);
+      console.log("response", response)
+      if (![200, 201, 204].includes(response?.status)) {
         throw new Error('Failed to send message');
       }
       toast.success(successMessage);
