@@ -1,5 +1,5 @@
 "use client";
-
+import axios from 'axios';
 import { useState } from 'react';
 import { Navigation } from '@/components/ui/navigation';
 import { Button } from '@/components/ui/button';
@@ -34,14 +34,8 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      if (!response.ok) {
+      const { status } = await axios.post('/api/contact', formData);
+      if (![200, 201, 204].includes(status)) {
         throw new Error('Failed to send message');
       }
       toast.success(successMessage);

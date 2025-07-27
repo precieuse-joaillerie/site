@@ -1,5 +1,5 @@
 "use client";
-
+import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Navigation } from '@/components/ui/navigation';
@@ -92,15 +92,8 @@ export default function SurMesurePage() {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/custom', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-      console.log(response)
-      if (!response.ok) {
+      const { status } = await axios.post('/api/custom', formData);
+      if (![200, 201, 204].includes(status)) {
         throw new Error('Failed to send message');
       }
       toast.success(successMessage);

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
 
-export const useResendContactForm = ({ onSuccess, onError }) => {
+export const useResendContactForm = ({ onSuccess, onError }: { onSuccess: () => void; onError: (message: string) => void }) => {
   const [loading, setLoading] = useState(false);
 
-  const submitForm = async (formData) => {
+  const submitForm = async (formData: any) => {
     setLoading(true);
     try {
       const response = await axios.post("/api/send-email", formData);

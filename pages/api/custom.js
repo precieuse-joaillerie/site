@@ -1,6 +1,9 @@
-import { NextRequest, NextResponse } from "next/server";
 
-export default async function handler(req: NextRequest) {
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
+
   try {
     const { firstName, lastName, birthDate, country, email, occasion, description } = await req.json();
     const html = `
@@ -32,12 +35,12 @@ export default async function handler(req: NextRequest) {
 
     if (!response.ok) {
       const error = await response.json();
-      return NextResponse.json({ error }, { status: response.status });
+      return res.json({ error }, { status: response.status });
     }
 
-    return NextResponse.json({ success: true }, { status: 200 });
+    return res.json({ success: true }, { status: 200 });
   } catch (error) {
-    return NextResponse.json(
+    return res.json(
       { error: "Failed to send email" },
       { status: 500 }
     );
