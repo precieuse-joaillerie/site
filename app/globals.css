@@ -70,8 +70,8 @@
     
     /* Better button sizing on mobile */
     button {
-      min-height: 44px; /* iOS recommended touch target */
-      min-width: 44px;
+     /*  min-height: 44px;
+      min-width: 44px; */
     }
     
     /* Improve form inputs on mobile */
@@ -173,4 +173,8 @@ textarea:focus-visible {
   .article-container h2 {
       font-size: 20px;
   }
+}
+
+div[role="tablist"] {
+    min-height: 150px !important;
 }

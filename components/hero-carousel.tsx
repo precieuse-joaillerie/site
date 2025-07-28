@@ -22,7 +22,7 @@ export function HeroCarousel(props: any) {
           : "Seu joia. Sua hist ria.",
       subtitle:
         currentLanguage === "FR"
-          ? "Un savoir faire joaillier, une cr ation qui vous ressemble"
+          ? "Un savoir faire joaillier, une création qui vous ressemble"
           : currentLanguage === "EN"
           ? "A jeweler s expertise, a creation that resembles you"
           : "Um saber fazer joalheiro, uma cria o que o faz lembrar",
@@ -37,7 +37,7 @@ export function HeroCarousel(props: any) {
           : "Seu joia. Sua hist ria.",
       subtitle:
         currentLanguage === "FR"
-          ? "Un savoir faire joaillier, une cr ation qui vous ressemble"
+          ? "Un savoir faire joaillier, une création qui vous ressemble"
           : currentLanguage === "EN"
           ? "A jeweler s expertise, a creation that resembles you"
           : "Um saber fazer joalheiro, uma cria o que o faz lembrar",
@@ -52,7 +52,7 @@ export function HeroCarousel(props: any) {
           : "Seu joia. Sua hist ria.",
       subtitle:
         currentLanguage === "FR"
-          ? "Un savoir faire joaillier, une cr ation qui vous ressemble"
+          ? "Un savoir faire joaillier, une création qui vous ressemble"
           : currentLanguage === "EN"
           ? "A jeweler s expertise, a creation that resembles you"
           : "Um saber fazer joalheiro, uma cria o que o faz lembrar",

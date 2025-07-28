@@ -256,7 +256,7 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 border-t border-teal/10">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4 pb-3">
               {navItems.map((item) => (
                 <div key={item.name}>
                   {item.subItems ? (
@@ -300,9 +300,7 @@ export function Navigation() {
 
             {/* Mobile Language Selector */}
             <div className="pt-4 border-t border-teal/20">
-              <p className="text-sm font-medium text-teal mb-2">
-                Langue / Language
-              </p>
+            
               <div className="flex gap-2">
                 {languages.map((lang) => (
                   <Button

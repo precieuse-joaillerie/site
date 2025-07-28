@@ -75,7 +75,7 @@ export default function HistoirePage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-12">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-1 lg:grid-cols-4 mb-12">
               <TabsTrigger value="histoire">{currentLanguage === 'FR' ? 'Mon Histoire' : currentLanguage === 'PT' ? 'Minha História' : 'My History'}</TabsTrigger>
               <TabsTrigger value="savoir-faire">{currentLanguage === 'FR' ? 'Mon Savoir-faire' : currentLanguage === 'PT' ? 'Minha Sabedoria' : 'My Craftsmanship'}</TabsTrigger>
               <TabsTrigger value="valeurs">{currentLanguage === 'FR' ? 'Mes Valeurs et Engagements' : currentLanguage === 'PT' ? 'Minhas Valores e Engajamentos' : 'My Values and Commitments'}</TabsTrigger>

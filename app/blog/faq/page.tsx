@@ -244,11 +244,11 @@ export default function FAQPage() {
             <h1 className="text-4xl md:text-5xl font-light mb-8">{currentLanguage === 'FR' ? 'Questions Fréquentes' : currentLanguage === 'PT' ? 'Perguntas Frequentes' : 'Frequently Asked Questions'}</h1>
             
             <div className="max-w-4xl">
-              <Accordion type="single" collapsible className="space-y-4">
+              <Accordion type="single" collapsible className="text-left space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="bg-[#faf6f0] rounded-lg px-6">
-                    <AccordionTrigger className="text-xl font-light">{faq.question[currentLanguage]}</AccordionTrigger>
-                    <AccordionContent className="text-gray-600">
+                  <AccordionItem key={index} value={`item-${index}`} className="text-left bg-[#faf6f0] rounded-lg px-6">
+                    <AccordionTrigger className="text-left text-xl font-light">{faq.question[currentLanguage]}</AccordionTrigger>
+                    <AccordionContent className="text-left text-gray-600">
                       {faq.answer[currentLanguage]}
                     </AccordionContent>
                   </AccordionItem>
