@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Navigation } from '@/components/ui/navigation';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
@@ -53,6 +53,18 @@ export default function JewelryPage() {
     *[_type == "productsPageImages"]
   `;
   const { data, isLoading, error } = useFetch(query);
+  useEffect(() => {
+    const scrollToProducts = () => {
+      const url = window.location.href;
+      const urlParts = url.split('#product-');
+      const productId = urlParts.length > 1 ? Number(urlParts[1]) : undefined;
+      const element = document.getElementById(`product-${productId}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+    scrollToProducts()
+  },[isLoading])
 
   if (isLoading) return <Loader />;
   if (error) return <div>Error</div>;
@@ -821,6 +833,8 @@ export default function JewelryPage() {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+
+
 
   return (
     <main className="min-h-screen">
