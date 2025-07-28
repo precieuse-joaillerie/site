@@ -34,7 +34,7 @@ export function FounderSection(props:any) {
                 <p className="text-lg text-justify text-teal">
                   {currentLanguage === 'EN' ? 'Precious, it is the encounter between artisanal excellence and intimate listening, for creations that celebrate what you have unique to transmit.' :
                   currentLanguage === 'FR' ? "Précieuse, c'est la rencontre entre l'excellence artisanale et l'écoute intime, pour des créations qui célèbrent ce que vous avez d'unique à transmettre." :
-                  'Precioso,   a reuni o entre a excel ncia artesanal e a escuta ntima, para cria es que celebram o que voc  tem nico a transmitir.'}
+                  'Precioso,   a reuni o entre a excelência artesanal e a escuta ntima, para cria es que celebram o que voc  tem nico a transmitir.'}
                 </p>
                 
                 <div className="italic space-y-4 mt-6">
@@ -45,29 +45,29 @@ export function FounderSection(props:any) {
                   </p>
                   <p className="text-justify text-teal">
                     {currentLanguage === 'EN' ? 'Through jewelry, I weave a link between artisanal mastery, sensitive creativity, and sincere listening.' :
-                    currentLanguage === 'FR' ? '   travers la joaillerie, je tisse un lien entre ma trise artisanale, cr ativit  sensible et  coute sinc re.' :
-                    'Atrav s da joalheria, eu teco um elo entre a maestria artesanal, criatividade sens vel e escuta sincera.'}
+                    currentLanguage === 'FR' ? '   travers la joaillerie, je tisse un lien entre ma trise artisanale, créativité sensible et coute sincère.' :
+                    'Através da joalheria, eu teco um elo entre a maestria artesanal, criatividade sensível e escuta sincera.'}
                   </p>
                   <p className="text-justify text-teal">
                     {currentLanguage === 'EN' ? "I don't just conceive of jewelry, but of pieces that tell a story - a moment, an emotion, a story to transmit." :
                     currentLanguage === 'FR' ? "Je ne con ois pas simplement des bijoux, mais des pi ces qui racontent quelque chose - un moment, une motion, une histoire   transmettre." :
-                    'Eu n o concebo apenas bijuterias, mas pe as que contam uma hist ria - um momento, uma emo o, uma hist ria a transmitir.'}
+                    'Eu n o concebo apenas bijuterias, mas peças que contam uma história - um momento, uma emoção, uma história a transmitir.'}
                   </p>
                   <p className="text-justify text-teal">
                     {currentLanguage === 'EN' ? 'My ambition: create jewelry that transcends time, both timeless and deeply personal.' :
-                    currentLanguage === 'FR' ? "Mon ambition : cr er des bijoux qui traversent le temps,   la fois intemporels et profond ment personnels." :
-                    'Minha ambi o : criar bijuterias que transcendem o tempo, tanto intemporais quanto profundamente pessoais.'}
+                    currentLanguage === 'FR' ? "Mon ambition : créer des bijoux qui traversent le temps,   la fois intemporels et profond ment personnels." :
+                    'Minha ambição : criar bijuterias que transcendem o tempo, tanto intemporais quanto profundamente pessoais.'}
                   </p>
                   <p className="text-justify text-teal">
                     {currentLanguage === 'EN' ? 'Whether they come from a collection or are designed to measure, each piece celebrates what you have unique to express.' :
                     currentLanguage === 'FR' ? "Qu'ils soient issus d une collection ou pens s sur mesure, chaque bijou c l bre ce que vous avez d unique   exprimer." :
-                    'Sejam eles provenientes de uma cole o ou projetados sob medida, cada pe a celebra o que voc  tem nico a expressar.'}
+                    'Sejam eles provenientes de uma coleção ou projetados sob medida, cada peça celebra o que você tem único a expressar.'}
                   </p>
                 </div>
 
                 <div className="pt-4">
                   <p className="text-right text-teal">{currentLanguage === 'EN' ? 'Emeline' : currentLanguage === 'FR' ? 'Emeline' : 'Emeline'}</p>
-                  <p className="text-sm text-right text-teal">{currentLanguage === 'EN' ? 'Jeweler-Founder' : currentLanguage === 'FR' ? 'Joaillre - Fondatrice' : 'Jeweler-Founder'}</p>
+                  <p className="text-sm text-right text-teal">{currentLanguage === 'EN' ? 'Jeweler-Founder' : currentLanguage === 'FR' ? 'Joaillière - Fondatrice' : 'Joalheiro - Fundadora'}</p>
                 </div>
               </div>
             </div>

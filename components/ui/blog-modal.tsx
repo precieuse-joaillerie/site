@@ -43,7 +43,7 @@ export function BlogModal({ isOpen, onClose, article, lng }: BlogModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-4xl md:max-w-4xl max-w-full sm:max-w-full max-h-[90vh] sm:max-h-[90vh] overflow-y-auto">
         <DialogTitle className="text-3xl font-light mb-4">
           {article.title}
         </DialogTitle>
@@ -52,18 +52,17 @@ export function BlogModal({ isOpen, onClose, article, lng }: BlogModalProps) {
           <Badge variant="secondary" className="bg-bronze/10 text-bronze">
             {article.category}
           </Badge>
-          {article.date && <span className="text-sm text-gray-500">{article.date}</span>}
         </div>
 
-        <div className="aspect-video relative mb-8">
+        <div className="aspect-video relative mb-8 sm:aspect-video aspect-[4/3]">
           <img
             src={article.image}
             alt={article.title}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-cover rounded-lg sm:w-full sm:h-full md:w-full md:h-full"
           />
         </div>
 
-        <div className="prose max-w-none article-container">
+        <div className="prose max-w-none article-container sm:prose-sm md:prose-base lg:prose-lg">
           <PortableText
             value={article.content}
             components={myPortableTextComponents}

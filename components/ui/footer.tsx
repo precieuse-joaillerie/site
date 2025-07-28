@@ -129,7 +129,7 @@ export function Footer() {
               className="text-white text-sm hover:text-powder transition-colors"
             >
               Created with <span className="text-rust">❤️</span> by 
-              {currentLanguage === 'FR' ? 'Vasseo' : currentLanguage === 'EN' ? 'Vasseo' : 'Vasseo'}
+              {currentLanguage === 'FR' ? ' Vasseo' : currentLanguage === 'EN' ? ' Vasseo' : ' Vasseo'}
             </a>
             
             <div className="flex space-x-4">

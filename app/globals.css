@@ -178,3 +178,8 @@ textarea:focus-visible {
 div[role="tablist"] {
     min-height: 150px !important;
 }
+
+#button {
+  min-height: 44px;
+ min-width: 44px;
+}
