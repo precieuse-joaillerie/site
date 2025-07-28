@@ -143,12 +143,12 @@ export default function SurMesurePage() {
         </div>
         <div className="relative text-white text-center z-10">
           <h1 className="text-5xl md:text-7xl font-light mb-4 text-white">
-            {currentLanguage === 'EN' ? 'Custom Made Alliances' : currentLanguage === 'FR' ? 'Alliances Sur Mesure' : 'Alian as Feitas por Medida'}
+            {currentLanguage === 'EN' ? 'Custom Made Alliances' : currentLanguage === 'FR' ? 'Alliances Sur Mesure' : 'Alianças Feitas por Medida'}
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
-            {currentLanguage === 'EN' ? 'A unique piece that looks like you, carrying meaning.' : currentLanguage === 'FR' ? 'Une pièce unique qui vous ressemble, porteuse de sens.' : 'Uma pe a nica que se assemelha a voc , carregando significado.'}
+            {currentLanguage === 'EN' ? 'A unique piece that looks like you, carrying meaning.' : currentLanguage === 'FR' ? 'Une pièce unique qui vous ressemble, porteuse de sens.' : 'Uma peça única que se assemelha a você, carregando significado.'}
             <br />
-            {currentLanguage === 'EN' ? 'Handcrafted in 19.2 carat gold and certified natural stones.' : currentLanguage === 'FR' ? 'Réalisé à la main en or 19,2 carats et pierres naturelles certifiées.' : 'Feita  m o em ouro de 19,2 quilates e pedras naturais certificadas.'}
+            {currentLanguage === 'EN' ? 'Handcrafted in 19.2 carat gold and certified natural stones.' : currentLanguage === 'FR' ? 'Réalisé à la main en or 19,2 carats et pierres naturelles certifiées.' : 'Feito à mão em ouro de 19,2 quilates e pedras naturais certificadas.'}  
           </p>
         </div>
       </section>

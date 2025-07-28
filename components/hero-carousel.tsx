@@ -19,7 +19,7 @@ export function HeroCarousel(props: any) {
           ? "Votre bijou. Votre histoire."
           : currentLanguage === "EN"
           ? "Your jewel. Your story."
-          : "Seu joia. Sua hist ria.",
+          : "Seu joia. Sua história.",
       subtitle:
         currentLanguage === "FR"
           ? "Un savoir faire joaillier, une création qui vous ressemble"
@@ -34,7 +34,7 @@ export function HeroCarousel(props: any) {
           ? "Votre bijou. Votre histoire."
           : currentLanguage === "EN"
           ? "Your jewel. Your story."
-          : "Seu joia. Sua hist ria.",
+          : "Seu joia. Sua história.",
       subtitle:
         currentLanguage === "FR"
           ? "Un savoir faire joaillier, une création qui vous ressemble"
@@ -49,7 +49,7 @@ export function HeroCarousel(props: any) {
           ? "Votre bijou. Votre histoire."
           : currentLanguage === "EN"
           ? "Your jewel. Your story."
-          : "Seu joia. Sua hist ria.",
+          : "Seu joia. Sua história.",
       subtitle:
         currentLanguage === "FR"
           ? "Un savoir faire joaillier, une création qui vous ressemble"
