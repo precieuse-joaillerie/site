@@ -54,7 +54,7 @@ export function CommitmentsSection() {
         </div>
 
         <div className="text-center">
-          <Link href="/histoire">
+          <Link href="/histoire?tab=valeurs">
             <Button
               variant="outline"
               size="lg"
