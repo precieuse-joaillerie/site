@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     siteName: 'Précieuse',
     locale: 'fr_FR',
     type: 'website',
+    images: [
+      {
+        url: 'https://lh3.googleusercontent.com/pw/AP1GczMFtiIKDDUA3PGyxnbmI9F6QL1pyizyWF2VL6AlbudNO4MG_i_hN_bbk0PHc4EQSw5Yalit1DLohvU2j90UGItWCEXIZvHUKB7pm2eeoJS3hjbOFJ2FEwVINP-gC4ycmzb7P0xZ6R4LxfxBp98ZVtCV=w1916-h1916-s-no-gm?authuser=1',
+        width: 1916,
+        height: 1916,
+        alt: 'Précieuse Joaillerie Artisanale Sur Mesure',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
