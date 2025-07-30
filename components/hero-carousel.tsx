@@ -19,13 +19,13 @@ export function HeroCarousel(props: any) {
           ? "Votre bijou. Votre histoire."
           : currentLanguage === "EN"
           ? "Your jewel. Your story."
-          : "Seu joia. Sua história.",
+          : "Sua joia. Sua história.",
       subtitle:
         currentLanguage === "FR"
           ? "Un savoir faire joaillier, une création qui vous ressemble"
           : currentLanguage === "EN"
-          ? "A jeweler s expertise, a creation that resembles you"
-          : "Um saber fazer joalheiro, uma cria o que o faz lembrar",
+          ? "A creation shaped by expert hands, made just for you."
+          : "Um saber-fazer joalheiro, que cria o que faz lembrar.",
     },
     {
       image: images.image2,
@@ -39,7 +39,7 @@ export function HeroCarousel(props: any) {
         currentLanguage === "FR"
           ? "Un savoir faire joaillier, une création qui vous ressemble"
           : currentLanguage === "EN"
-          ? "A jeweler s expertise, a creation that resembles you"
+          ? "A creation shaped by expert hands, made just for you."
           : "Um saber fazer joalheiro, uma cria o que o faz lembrar",
     },
     {
@@ -54,7 +54,7 @@ export function HeroCarousel(props: any) {
         currentLanguage === "FR"
           ? "Un savoir faire joaillier, une création qui vous ressemble"
           : currentLanguage === "EN"
-          ? "A jeweler s expertise, a creation that resembles you"
+          ? "A creation shaped by expert hands, made just for you."
           : "Um saber fazer joalheiro, uma cria o que o faz lembrar",
     },
   ];
@@ -96,8 +96,8 @@ export function HeroCarousel(props: any) {
                   {currentLanguage === "FR"
                     ? "Créez votre bijou"
                     : currentLanguage === "EN"
-                    ? "Create your jewel"
-                    : "Criez seu bijou"}
+                    ? "Design your jewel"
+                    : "Crie sua joia"}
                 </Button>
               </Link>
             </div>

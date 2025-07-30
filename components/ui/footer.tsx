@@ -28,7 +28,7 @@ export function Footer() {
           {/* Colonne 1 - Description */}
           <div>
             <p className="text-white">
-              {currentLanguage === 'FR' ? 'Joaillerie artisanale de luxe. Créations uniques en or 19 carats et diamants certifiés.' : currentLanguage === 'EN' ? 'Artisanal Luxury Jewelry. Unique creations in 19 carat gold and certified diamonds.' : 'Joalharia artesanal de luxo. Cria es únicas em ouro de 19 quilates e diamantes certificados.'}
+              {currentLanguage === 'FR' ? 'Joaillerie artisanale de luxe. Créations uniques en or 19 carats et diamants certifiés.' : currentLanguage === 'EN' ? 'Artisanal Luxury Jewelry. Unique creations in 19 carat gold and certified diamonds.' : 'Joalharia artesanal de luxo. Peças únicas em ouro de 19 quilates e diamantes certificados'}
             </p>
           </div>
 

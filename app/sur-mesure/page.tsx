@@ -148,7 +148,7 @@ export default function SurMesurePage() {
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
             {currentLanguage === 'EN' ? 'A unique piece that looks like you, carrying meaning.' : currentLanguage === 'FR' ? 'Une pièce unique qui vous ressemble, porteuse de sens.' : 'Uma peça única que se assemelha a você, carregando significado.'}
             <br />
-            {currentLanguage === 'EN' ? 'Handcrafted in 19.2 carat gold and certified natural stones.' : currentLanguage === 'FR' ? 'Réalisé à la main en or 19,2 carats et pierres naturelles certifiées.' : 'Feito à mão em ouro de 19,2 quilates e pedras naturais certificadas.'}  
+            {currentLanguage === 'EN' ? 'Handcrafted in 19.2 carat gold and certified natural stones.' : currentLanguage === 'FR' ? 'Réalisé à la main en or 19,2 carats et pierres naturelles certifiées.' : 'Feita à mão em ouro de 19,2 quilates e pedras naturais certificadas.'}  
           </p>
         </div>
       </section>
@@ -169,12 +169,12 @@ export default function SurMesurePage() {
               <div className="space-y-4 text-teal">
                 <p className="text-lg text-justify">
                   {
-                    currentLanguage === "FR" ? "Chez Précieuse, chaque bijou commence par une rencontre. Celle d'un moment fort, d'un désir singulier, d'une émotion à transmettre." : currentLanguage === "EN" ? "At Précieuse, every piece of jewelry begins with an encounter. The encounter of a special moment, a singular desire, an emotion to convey." : "Na Précieuse, cada joia começa com um encontro. O encontro de um momento especial, um desejo singular, uma emoção a transmitir."
+                    currentLanguage === "FR" ? "Chez Précieuse, chaque bijou commence par une rencontre. Celle d'un moment fort, d'un désir singulier, d'une émotion à transmettre." : currentLanguage === "EN" ? "At Précieuse, every piece of jewelry begins with an encounter. The encounter of a special moment, a singular desire, an emotion to convey." : "Na Précieuse, cada joia começa com um encontro. O encontro de um momento especial, um desejo singular, uma emoção a ser transmetida."
                   }
                 </p>
                 <p className="text-lg text-justify">
                   {
-                    currentLanguage === "FR" ? "Ici, le sur-mesure n'est pas une option : c'est une évidence. L'écoute et le savoir-faire de notre joaillière s'unissent pour donner naissance à des pièces qui vous ressemblent." : currentLanguage === "EN" ? "Here, custom-made isn't an option: it's a given. Our jeweler's attentiveness and expertise combine to create pieces that reflect your personality." : "Aqui, personalizado não é uma opção: é uma certeza. A atenção e a experiência dos nossos joalheiros combinam-se para criar peças que refletem a sua personalidade." 
+                    currentLanguage === "FR" ? "Ici, le sur-mesure n'est pas une option : c'est une évidence. L'écoute et le savoir-faire de notre joaillière s'unissent pour donner naissance à des pièces qui vous ressemblent." : currentLanguage === "EN" ? "Here, custom-made isn't an option: it's a given. Our jeweler's attentiveness and expertise combine to create pieces that reflect your personality." : "Aqui, personalizado não é uma opção: é uma certeza. A atenção e a experiência dos nossos joalheiros unem-se para criar peças que refletem a sua personalidade." 
                   }
                 </p>
               </div>
@@ -352,7 +352,7 @@ export default function SurMesurePage() {
                           ? 'A dialogue is established, we adjust together during a second meeting.'
                           : currentLanguage === 'FR'
                             ? "Un dialogue s'installe, on ajuste ensemble lors d'un second rendez-vous."
-                            : 'Um di logo é estabelecido, ajustamos juntos durante um segundo encontro.'}
+                            : 'Um primeiro esboço é apresentado e ajustamos juntos no segundo encontro'}
                       </p>
                     </div>
                   </div>
@@ -374,7 +374,7 @@ export default function SurMesurePage() {
                           ? 'You are sure of yourself, you love this proposal…'
                           : currentLanguage === 'FR'
                             ? 'Vous êtes sûr de vous, vous adorez cette proposition…'
-                            : 'Voc  est  seguro de si mesmo, voc  ama essa proposta…'}
+                            : 'Você se sente seguro e confiante com a proposta? Assim que o modelo é validado, você recebe um orçamento detalhado. Transparência total.'}
                       </p>
                       <p>
                         {currentLanguage === 'EN'
@@ -425,20 +425,20 @@ export default function SurMesurePage() {
                           ? 'The manufacturing process only starts once you have confirmed your agreement.'
                           : currentLanguage === 'FR'
                             ? "La fabrication ne commence qu'une fois votre accord confirmé."
-                            : 'O processo de fabrica o s  come a uma vez que voc  tem confirmado seu acordo.'}
+                            : 'O processo de fabricação começa assim que seu acordo é confirmado.'}
                       </p>
                       <p>
                         {currentLanguage === 'EN'
                           ? 'Each piece is handmade in our workshop in Portugal.'
                           : currentLanguage === 'FR'
                             ? 'Chaque pi ce est r alis e  la main dans notre atelier au Portugal.'
-                            : 'Cada pe a   feita  m o em nosso ateli  no Portugal.'}
+                            : 'Cada peça é feita à mão no nosso ateliê em Portugal.'}
                       </p>
                       <p>
                         {currentLanguage === 'EN'
                           ? '19 carat gold, natural diamonds, and meticulous finishes.'
                           : currentLanguage === 'FR'
-                            ? 'Or 19 carats garanti, diamants naturels certifi s, finitions   la loupe.'
+                            ? 'Or 19 carats garanti, diamants naturels certifiés, finitions à la loupe.'
                             : 'Ouro 19 quilates garantido, diamantes naturais certificados, acabamentos meticulosos.'}
                       </p>
                     </div>
@@ -461,14 +461,14 @@ export default function SurMesurePage() {
                           ? 'Your jewelry is delivered in a wooden box, accompanied by a certificate and a personalized message.'
                           : currentLanguage === 'FR'
                             ? "Votre bijou est livré dans son boîtier, accompagné de son certificat et d'un mot personnalisé."
-                            : 'O seu joia é entregue em uma caixa de madeira, acompanhada de um certificado e uma mensagem personalizada.'}
+                            : 'Sua joia é entregue em uma embalagem refinada e sustentável, acompanhada de um certificado e de uma mensagem personalizada.'}
                       </p>
                       <p>
                         {currentLanguage === 'EN'
                           ? 'You will also receive maintenance recommendations and a follow-up service offer.'
                           : currentLanguage === 'FR'
                             ? "Vous recevez galement des conseils d'entretien et une offre de suivi et d'entretien."
-                            : "Voc também recebe recomendações de manutenção e uma oferta de serviço de suporte."}
+                            : "Você também recebe recomendações de manutenção e uma oferta de serviço de suporte."}
                       </p>
                     </div>
                   </div>
@@ -560,7 +560,7 @@ export default function SurMesurePage() {
 
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-teal">
-                        {currentLanguage === 'EN' ? 'Email address' : currentLanguage === 'FR' ? 'Adresse email' : 'Endere o de email'}
+                        {currentLanguage === 'EN' ? 'Email address' : currentLanguage === 'FR' ? 'Adresse email' : 'Endereço de e-mail'}
                       </Label>
                       <Input
                         id="email"
@@ -574,7 +574,7 @@ export default function SurMesurePage() {
 
                     <div className="space-y-2">
                       <Label htmlFor="occasion" className="text-teal">
-                        {currentLanguage === 'EN' ? 'Occasion / Event to celebrate' : currentLanguage === 'FR' ? 'Occasion / événement à célébrer' : 'Ocas o / evento a celebrar'}
+                        {currentLanguage === 'EN' ? 'Occasion / Event to celebrate' : currentLanguage === 'FR' ? 'Occasion / événement à célébrer' : 'Ocasião / evento a celebrar'}
                       </Label>
                       <Input
                         id="occasion"
@@ -599,7 +599,7 @@ export default function SurMesurePage() {
                             ? 'Describe your wishes, style, and budget...'
                             : currentLanguage === 'FR'
                               ? 'Décrivez vos envies, le style recherché, et votre budget...'
-                              : 'Descreva seus desejos, estilo, e or amento...'
+                              : 'Descreva seus desejos, estilo e orçamento…'
                         }
                         required
                       />
@@ -610,7 +610,7 @@ export default function SurMesurePage() {
                         type="submit"
                         className="w-full bg-rust text-white hover:bg-rust/90 flex items-center justify-center gap-2"
                       >
-                        {currentLanguage === 'EN' ? 'Schedule a meeting' : currentLanguage === 'FR' ? 'Prendre rendez-vous' : 'Agendar uma reuni o'}
+                        {currentLanguage === 'EN' ? 'Schedule a meeting' : currentLanguage === 'FR' ? 'Prendre rendez-vous' : 'Agendar uma reunião'}
                         <ArrowRight className="w-4 h-4" />
                       </Button>
                     </div>

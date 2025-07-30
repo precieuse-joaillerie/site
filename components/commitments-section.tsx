@@ -17,7 +17,7 @@ export function CommitmentsSection() {
     {
       icon: Heart,
       title: currentLanguage === 'EN' ? "Craftsmanship" : currentLanguage === 'FR' ? "Artisanat" : "Artesanato",
-      description: currentLanguage === 'EN' ? "Handmade in my workshop in Portugal" : currentLanguage === 'FR' ? "Fabrication artisanale dans mon atelier au Portugal" : "Fabricação artesanal em meu atelier em Portugal"
+      description: currentLanguage === 'EN' ? "Handmade in my workshop in Portugal" : currentLanguage === 'FR' ? "Fabrication artisanale dans mon atelier au Portugal" : "Fabricação artesanal em meu ateliê em Portugal"
     },
     {
       icon: Gem,
@@ -60,7 +60,7 @@ export function CommitmentsSection() {
               size="lg"
               className="border-rust text-rust hover:bg-rust hover:text-white"
             >
-              {currentLanguage === 'EN' ? "Discover My Values" : currentLanguage === 'FR' ? "Découvrir Mes Valeurs" : "Descobrir Meus Valores"}
+              {currentLanguage === 'EN' ? "Explore my values" : currentLanguage === 'FR' ? "Découvrir Mes Valeurs" : "Descobrir Meus Valores"}
             </Button>
           </Link>
         </div>

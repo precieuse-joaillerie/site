@@ -853,10 +853,10 @@ export default function JewelryPage() {
         <div className="relative h-full flex items-center justify-center text-white">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-light mb-4 text-white">
-              {currentLanguage === "FR" ? "Des créations d'exception" : currentLanguage === "PT" ? "Criações excepcionais" : "Exceptional creations"}<br />{currentLanguage === "FR" ? "serties main" : currentLanguage === "PT" ? "sertas principais" : "main series"}
+              {currentLanguage === "FR" ? "Des créations d'exception" : currentLanguage === "PT" ? "Criações de exceção" : "Exceptional handcrafted"}<br />{currentLanguage === "FR" ? "serties main" : currentLanguage === "PT" ? "com cravação artesanal" : "creations"}
             </h1>
             <p className="text-lg md:text-xl text-white">
-              {currentLanguage === "FR" ? "Chaque bijou célèbre ce que vous avez d'unique à exprimer" : currentLanguage === "PT" ? "Cada joia celebra o que você tem de único para expressar" : "Each jewel celebrates what you have unique to express"}
+              {currentLanguage === "FR" ? "Chaque bijou célèbre ce que vous avez d'unique à exprimer" : currentLanguage === "PT" ? "Cada joia celebra o que você tem de único para expressar" : "Each jewel celebrates what makes you unique."}
             </p>
           </div>
         </div>
@@ -981,7 +981,7 @@ export default function JewelryPage() {
                         <div className="space-y-4 text-teal">
                           <p className="font-medium">{product.technicalDetails.weight[currentLanguage]}</p>
                           <div>
-                            <p className="font-medium mb-2">Diamants naturels GVS :</p>
+                            <p className="font-medium mb-2">{currentLanguage === "FR" ? "Diamants naturels GVS :" : currentLanguage === "PT" ? "Diamantes naturais GVS :" : "Natural diamonds GVS :"}</p>
                             <ul className="space-y-1">
                               {product.technicalDetails.diamonds.map((diamond, i) => (
                                 <li key={i} className="flex items-start gap-2">
@@ -1023,16 +1023,16 @@ export default function JewelryPage() {
 
                       {/* Fabrication & Personnalisation */}
                       <CollapsibleSection
-                        title={currentLanguage === "FR" ? "Fabrication & Personnalisation" : currentLanguage === "PT" ? "Fabricação & Personalização" : "Fabrication & Personalization"}
+                        title={currentLanguage === "FR" ? "Fabrication & Personnalisation" : currentLanguage === "PT" ? "Fabricação & Personalização" : "Craftsmanship & Customization"}
                         isOpen={openSections[`${product.id}-fabrication`] || false}
                         onToggle={() => toggleSection(product.id, 'fabrication')}
                       >
                         <div className="space-y-4 text-teal">
                           {product.fabrication.process[currentLanguage].split('\n\n').map((paragraph, i) => (
                             <p key={i}>{paragraph}</p>
-                          ))}
+                          ))} 
                           <div>
-                            <p className="font-medium mb-2">Options de personnalisation :</p>
+                            <p className="font-medium mb-2">{currentLanguage === 'FR' ? 'Options de personnalisation' : currentLanguage === 'PT' ? 'Opções de personalização' : 'Customization Options'}</p>
                             <ul className="space-y-1">
                               {product.fabrication.customization.map((option, i) => (
                                 <li key={i} className="flex items-start gap-2">

@@ -80,7 +80,7 @@ export default function ContactPage() {
         <div className="relative text-white text-center z-10">
           <h1 className="text-5xl md:text-7xl font-light mb-4 text-white">{currentLanguage === 'FR' ? 'Contact' : currentLanguage === 'EN' ? 'Contact' : 'Contato'}</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-white">
-            {currentLanguage === 'FR' ? 'Je suis là pour vous accompagner' : currentLanguage === 'EN' ? 'I am here to accompany you' : 'Estou aqui para te acompanhar'}
+            {currentLanguage === 'FR' ? 'Je suis là pour vous accompagner' : currentLanguage === 'EN' ? 'I’m here to guide you every step of the way.' : 'Estou aqui para te acompanhar'}
           </p>
         </div>
       </section>
@@ -89,10 +89,10 @@ export default function ContactPage() {
       <div className="bg-rust/50 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-light mb-6">
-            {currentLanguage === 'FR' ? 'Créons votre bijou sur-mesure' : currentLanguage === 'EN' ? 'We create your custom jewelry' : 'Criamos seu bijujo a medida'}
+            {currentLanguage === 'FR' ? 'Créons votre bijou sur-mesure' : currentLanguage === 'EN' ? 'We create your custom jewelry' : 'Criamos a sua joia sob medida'}
           </h2>
           <p className="text-lg max-w-2xl mx-auto mb-8">
-            {currentLanguage === 'FR' ? 'Chaque création est unique, façonnée selon vos désirs. Découvrez un processus de création personnalisée et donnez vie à votre projet.' : currentLanguage === 'EN' ? 'Each creation is unique, shaped according to your desires. Discover a personalized creation process and bring your project to life.' : 'Cada criação é única, formada de acordo com seus desejos. Descubra um processo de criação personalizado e dê vida ao seu projeto.'}
+            {currentLanguage === 'FR' ? 'Chaque création est unique, façonnée selon vos désirs. Découvrez un processus de création personnalisée et donnez vie à votre projet.' : currentLanguage === 'EN' ? 'Each creation is unique, shaped according to your desires. Discover a personalized creation process and bring your project to life.' : 'Cada criação é única, feita de acordo com os seus desejos. Descubra um processo de criação personalizado e dê vida ao seu projeto.'}
           </p>
           <div className="flex justify-center">
             <Link href="/sur-mesure">
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 size="lg"
               >
                 <Sparkles className="w-5 h-5" />
-                {currentLanguage === 'FR' ? 'Créez votre bijou' : currentLanguage === 'EN' ? 'Create your custom jewelry' : 'Crie seu bijujo a medida'}
+                {currentLanguage === 'FR' ? 'Créez votre bijou' : currentLanguage === 'EN' ? 'Create your custom piece' : 'Crie sua joia sob medida'}
               </Button>
             </Link>
           </div>

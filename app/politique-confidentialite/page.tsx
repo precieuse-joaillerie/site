@@ -63,7 +63,7 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-4">
                 <li>{currentLanguage === 'EN' ? 'First name and last name' : currentLanguage === 'FR' ? 'Nom et prénom' : 'Nome e sobrenome'}</li>
-                <li>{currentLanguage === 'EN' ? 'Email address' : currentLanguage === 'FR' ? 'Adresse email' : 'Endere o de e-mail'}</li>
+                <li>{currentLanguage === 'EN' ? 'Email address' : currentLanguage === 'FR' ? 'Adresse email' : 'Endereço de e-mail'}</li>
                 <li>{currentLanguage === 'EN' ? 'Phone number' : currentLanguage === 'FR' ? 'Numéro de téléphone' : 'N mero de telefone'}</li>
                 <li>{currentLanguage === 'EN' ? 'Postal address (for orders and deliveries)' : currentLanguage === 'FR' ? 'Adresse postale (lors de commandes ou livraisons)' : 'Endere o postal (para pedidos e entregas)'}</li>
                 <li>{currentLanguage === 'EN' ? 'Payment information (processed securely via our providers)' : currentLanguage === 'FR' ? 'Informations de paiement (traitées de manière sécurisée via nos prestataires)' : 'Informa es de pagamento (processadas de forma segura por meio dos nossos provedores)'}</li>

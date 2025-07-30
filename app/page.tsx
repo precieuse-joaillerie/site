@@ -64,7 +64,7 @@ export default function Home() {
               {currentLanguage === "EN"
                 ? "Create your unique jewel"
                 : currentLanguage === "PT"
-                ? "Crie seu joia único"
+                ? "Crie sua joia único"
                 : "Créons ensemble votre bijou"}
             </h2>
             <p className="text-teal mb-8">
@@ -81,9 +81,9 @@ export default function Home() {
                 className="bg-transparent border-2 border-rust text-rust hover:bg-rust hover:text-white transition-all hover:scale-105 transform duration-300 hover:shadow-lg"
               >
                 {currentLanguage === "EN"
-                  ? "Create your jewel"
+                  ? "Design your jewel"
                   : currentLanguage === "PT"
-                  ? "Crie seu joia"
+                  ? "Crie sua joia"
                   : "Créez votre bijou"}
               </Button>
             </Link>

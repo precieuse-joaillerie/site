@@ -79,7 +79,7 @@ export default function HistoirePage() {
               <TabsTrigger value="histoire">{currentLanguage === 'FR' ? 'Mon Histoire' : currentLanguage === 'PT' ? 'Minha História' : 'My History'}</TabsTrigger>
               <TabsTrigger value="savoir-faire">{currentLanguage === 'FR' ? 'Mon Savoir-faire' : currentLanguage === 'PT' ? 'Minha Sabedoria' : 'My Craftsmanship'}</TabsTrigger>
               <TabsTrigger value="valeurs">{currentLanguage === 'FR' ? 'Mes Valeurs et Engagements' : currentLanguage === 'PT' ? 'Minhas Valores e Engajamentos' : 'My Values and Commitments'}</TabsTrigger>
-              <TabsTrigger value="manifeste">{currentLanguage === 'FR' ? 'Mon Manifeste' : currentLanguage === 'PT' ? 'Minha Manifesto' : 'My Manifesto'}</TabsTrigger>
+              <TabsTrigger value="manifeste">{currentLanguage === 'FR' ? 'Mon Manifeste' : currentLanguage === 'PT' ? 'Meu manifesto' : 'My Manifesto'}</TabsTrigger>
             </TabsList>
 
             <TabsContent value="histoire">
@@ -128,7 +128,7 @@ export default function HistoirePage() {
                       size="lg"
                     >
                       <Sparkles className="w-5 h-5" />
-                      {currentLanguage === 'FR' ? 'Créez votre bijou' : currentLanguage === 'PT' ? 'Criez o seu bijo' : 'Create your jewelry'}
+                      {currentLanguage === 'FR' ? 'Créez votre bijou' : currentLanguage === 'PT' ? 'Crie a sua joia' : 'Design your jewel'}
                     </Button>
                   </Link>
                 </motion.div>
@@ -254,7 +254,7 @@ export default function HistoirePage() {
                       <div className="p-8">
                         {currentLanguage === 'FR' ? <h3 className="text-2xl font-light mb-4 text-teal">Artisanat & Durabilité</h3> : currentLanguage === 'PT' ? <h3 className="text-2xl font-light mb-4 text-teal">Artisanato & Durabilidade</h3> : <h3 className="text-2xl font-light mb-4 text-teal">Craftsmanship & Durability</h3>}
                         <div className="space-y-1 text-teal">
-                          {currentLanguage === 'FR' ? <p>Chaque bijou est fabriqué artisanalement au Portugal, à la main, dans mon atelier. Je travaille sans stock, uniquement sur commande, pour respecter un rythme de production raisonné et éviter toute surconsommation. Ce choix permet de créer des pièces uniques, pensées pour durer, et réalisées dans des conditions de travail irréprochables. Ici, chaque bijou est un objet pour la vie.</p> : currentLanguage === 'PT' ? <p>Cada joia é fabricada artesanalmente no Portugal, à mão, no meu atelier. Trabalho sem estoque, apenas por pedido, para respeitar um ritmo de produção razoável e evitar qualquer superconsumo. Este escolha permite criar peças únicas, pensadas para durar, e realizadas em condições de trabalho irreprocháveis. Aqui, cada joia é um objeto para viver.</p> : <p>Each jewel is made by hand in Portugal, in my workshop. I work without stock, only on order, to respect a balanced production rhythm and avoid any overconsumption. This choice allows to create unique pieces, designed to last, and made in working conditions that are impeccable. Here, each jewel is an object for life.</p>}
+                          {currentLanguage === 'FR' ? <p>Chaque bijou est fabriqué artisanalement au Portugal, à la main, dans mon atelier. Je travaille sans stock, uniquement sur commande, pour respecter un rythme de production raisonné et éviter toute surconsommation. Ce choix permet de créer des pièces uniques, pensées pour durer, et réalisées dans des conditions de travail irréprochables. Ici, chaque bijou est un objet pour la vie.</p> : currentLanguage === 'PT' ? <p>Cada joia é fabricada artesanalmente no Portugal, à mão, no meu atelier. Trabalho sem estoque, apenas por pedido, para respeitar um ritmo de produção razoável e evitar qualquer superconsumo. Este escolha permite criar peças únicas, pensadas para durar, e realizadas em condições de trabalho irrepreensíveis. Aqui, cada joia é um objeto para viver.</p> : <p>Each jewel is made by hand in Portugal, in my workshop. I work without stock, only on order, to respect a balanced production rhythm and avoid any overconsumption. This choice allows to create unique pieces, designed to last, and made in working conditions that are impeccable. Here, each jewel is an object for life.</p>}
                         </div>
                       </div>
                       <div className="h-[400px]">
@@ -348,7 +348,7 @@ export default function HistoirePage() {
                   <div className="space-y-6 text-teal text-lg leading-relaxed">
                     {currentLanguage === 'FR' ? <p className="text-center font-light">Parce que chaque histoire mérite d'être célébrée.</p> : currentLanguage === 'PT' ? <p className="text-center font-light">Porque cada história merece ser celebrada.</p> : <p className="text-center font-light">Because every story deserves to be celebrated.</p>}
                     
-                    {currentLanguage === 'FR' ? <p className="text-center">La vraie beauté réside dans ce qui a du sens.</p> : currentLanguage === 'PT' ? <p className="text-center">A verdadeira beleza reside em aquilo que tem sentido.</p> : <p className="text-center">The true beauty resides in what has meaning.</p>}
+                    {currentLanguage === 'FR' ? <p className="text-center">La vraie beauté réside dans ce qui a du sens.</p> : currentLanguage === 'PT' ? <p className="text-center">A verdadeira beleza reside em naquilo que tem sentido.</p> : <p className="text-center">The true beauty resides in what has meaning.</p>}
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Dans ce qui est façonné avec patience, respect, et intention.</p> : currentLanguage === 'PT' ? <p className="text-center">Naquilo que é formado com paciência, respeito e intenção.</p> : <p className="text-center">In what is shaped with patience, respect, and intention.</p>}
                     
@@ -360,7 +360,7 @@ export default function HistoirePage() {
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Le témoin éclatant d'une émotion, d'une rencontre, d'un moment de vie que l'on choisit de rendre éternel.</p> : currentLanguage === 'PT' ? <p className="text-center">O brilhante testemunho de uma emoção, de uma encontro, de um momento de vida que escolhemos tornar eterno.</p> : <p className="text-center">The brilliant witness of an emotion, a meeting, a moment of life that we choose to make eternal.</p>}
                     
-                    {currentLanguage === 'FR' ? <p className="text-center font-medium">Notre engagement est clair :</p> : currentLanguage === 'PT' ? <p className="text-center font-medium">Nosso compromis é claro :</p> : <p className="text-center font-medium">Our commitment is clear :</p>}
+                    {currentLanguage === 'FR' ? <p className="text-center font-medium">Notre engagement est clair :</p> : currentLanguage === 'PT' ? <p className="text-center font-medium">Nosso compromisso é claro :</p> : <p className="text-center font-medium">Our commitment is clear :</p>}
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Créer des bijoux qui incarnent à la fois l'exigence du savoir-faire joaillier et la liberté sensible de la création.</p> : currentLanguage === 'PT' ? <p className="text-center">Criar joias que incorporam à la vez a exigência do saber-fazer joalheiro e a liberdade sensível da criação.</p> : <p className="text-center">Create jewels that embody both the requirement of jewelry savoir-faire and the sensible freedom of creation.</p>}
                     
@@ -368,15 +368,15 @@ export default function HistoirePage() {
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Nous travaillons l'or 19 carats et les pierres naturelles avec rigueur et humilité.</p> : currentLanguage === 'PT' ? <p className="text-center">Trabalhamos com ouro 19 quilates e pedras naturais com rigor e humildade.</p> : <p className="text-center">We work with 19-carat gold and natural stones with rigor and humility.</p>}
                     
-                    {currentLanguage === 'FR' ? <p className="text-center">Chaque pièce est façonnée à la main, selon des gestes ancestraux, dans notre atelier au Portugal.</p> : currentLanguage === 'PT' ? <p className="text-center">Cada peça é formada à mão, seguindo gestos ancestrais, no nosso ateliê em Portugal.</p> : <p className="text-center">Each piece is shaped by hand, according to ancestral gestures, in our workshop in Portugal.</p>}
+                    {currentLanguage === 'FR' ? <p className="text-center">Chaque pièce est façonnée à la main, selon des gestes ancestraux, dans notre atelier au Portugal.</p> : currentLanguage === 'PT' ? <p className="text-center">Cada peça é formada à mão, seguindo gestos ancestrais, em nosso ateliê em Portugal.</p> : <p className="text-center">Each piece is shaped by hand, according to ancestral gestures, in our workshop in Portugal.</p>}
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Pas pour suivre une mode éphémère.</p> : currentLanguage === 'PT' ? <p className="text-center">Não para seguir uma moda efêmera.</p> : <p className="text-center">Not for following a fleeting trend.</p>}
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Mais pour créer des pièces intemporelles, porteuses d'histoire, nées d'un échange intime entre la créatrice et celui ou celle qui les portera.</p> : currentLanguage === 'PT' ? <p className="text-center">Mas para criar peças intemporais, portadoras de história, nascidas de um trocadilho íntimo entre a criadora e quem as portará.</p> : <p className="text-center">But to create timeless pieces, bearers of history, born from an intimate exchange between the creator and who will wear them.</p>}
                     
-                    {currentLanguage === 'FR' ? <p className="text-center font-medium">Précieuse, c'est la promesse d'un lien.</p> : currentLanguage === 'PT' ? <p className="text-center font-medium">Preciosa, é a promessa de um vínculo.</p> : <p className="text-center font-medium">Precious, it is the promise of a bond.</p>}
+                    {currentLanguage === 'FR' ? <p className="text-center font-medium">Précieuse, c'est la promesse d'un lien.</p> : currentLanguage === 'PT' ? <p className="text-center font-medium">Preciosa, é a promessa de um vínculo.</p> : <p className="text-center font-medium">Précieuse, it is the promise of a bond.</p>}
                     
-                    {currentLanguage === 'FR' ? <p className="text-center">Entre hier et demain.</p> : currentLanguage === 'PT' ? <p className="text-center">Entre hier e amanhã.</p> : <p className="text-center">Between yesterday and tomorrow.</p>}
+                    {currentLanguage === 'FR' ? <p className="text-center">Entre hier et demain.</p> : currentLanguage === 'PT' ? <p className="text-center">Entre ontem e amanhã.</p> : <p className="text-center">Between yesterday and tomorrow.</p>}
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Entre la matière et l'émotion.</p> : currentLanguage === 'PT' ? <p className="text-center">Entre a matéria e a emoção.</p> : <p className="text-center">Between matter and emotion.</p>}
                     
@@ -386,9 +386,9 @@ export default function HistoirePage() {
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Nous choisissons la justesse, la sensibilité, l'authenticité.</p> : currentLanguage === 'PT' ? <p className="text-center">Escolhemos a justiça, a sensibilidade, a autenticidade.</p> : <p className="text-center">We choose justice, sensitivity, authenticity.</p>}
                     
-                    {currentLanguage === 'FR' ? <p className="text-center">Nous croyons aux bijoux qui traversent le temps,</p> : currentLanguage === 'PT' ? <p className="text-center">Cremos nos bijutos que atravessam o tempo,</p> : <p className="text-center">We believe in jewels that cross time,</p>}
+                    {currentLanguage === 'FR' ? <p className="text-center">Nous croyons aux bijoux qui traversent le temps,</p> : currentLanguage === 'PT' ? <p className="text-center">Cremos nos joias que atravessam o tempo,</p> : <p className="text-center">We believe in jewels that cross time,</p>}
                     
-                    {currentLanguage === 'FR' ? <p className="text-center">pas aux objets qui s'oublient.</p> : currentLanguage === 'PT' ? <p className="text-center">não aos objetos que se esquecem.</p> : <p className="text-center">not to objects that are forgotten.</p>}
+                    {currentLanguage === 'FR' ? <p className="text-center">pas aux objets qui s'oublient.</p> : currentLanguage === 'PT' ? <p className="text-center">não em objetos que se esquecem.</p> : <p className="text-center">not to objects that are forgotten.</p>}
                     
                     {currentLanguage === 'FR' ? <p className="text-center">Aux bijoux qui marquent, qui protègent, qui célèbrent.</p> : currentLanguage === 'PT' ? <p className="text-center">Nos bijutos que marcam, que protegem, que celebram.</p> : <p className="text-center">Jewels that mark, protect, celebrate.</p>}
                     
@@ -405,9 +405,9 @@ export default function HistoirePage() {
       <section className="py-20 bg-powder/50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-light mb-6 text-teal">
-            {currentLanguage === 'FR' ? " Créons ensemble votre bijou d'exception" : currentLanguage === 'PT' ? "Cremos juntos o seu bijuto excepcional" : "Let us create your exceptional jewel together"}
+            {currentLanguage === 'FR' ? " Créons ensemble votre bijou d'exception" : currentLanguage === 'PT' ? "Criemos juntos a sua joia excepcional" : "Let us create your exceptional jewel together"}
           </h2>
-          <p className="text-teal mb-8 max-w-2xl mx-auto">
+          <p className="text-teal mb-8 max-w-3xl mx-auto">
             {currentLanguage === 'FR' ? "Une expérience unique pour donner vie à vos plus belles envies. Prenons rendez-vous pour en parler." : currentLanguage === 'PT' ? "Uma experiência única para dar vida às suas belas aspirações. Agende um encontro para conversar." : "A unique experience to bring your most beautiful aspirations to life. Book an appointment to discuss it."}
           </p>
           <Link href="/sur-mesure">
