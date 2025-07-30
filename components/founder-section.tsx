@@ -39,29 +39,29 @@ export function FounderSection(props:any) {
                 
                 <div className="italic space-y-4 mt-6">
                   <p className="text-justify text-teal">
-                    {currentLanguage === 'EN' ? '"I founded this brand to practice a rare and deeply personal profession."' :
-                    currentLanguage === 'FR' ? "« J'ai fond  cette marque pour exercer un m tier rare, profond ment mien." :
+                    {currentLanguage === 'EN' ? '« I founded this brand to practice a rare and deeply personal profession.' :
+                    currentLanguage === 'FR' ? "« J'ai fond  cette marque pour exercer un métier rare, profondément mien.." :
                     '« Eu fundei essa marca para exercer um ofício raro e profundamente pessoal.»'}
                   </p>
                   <p className="text-justify text-teal">
                     {currentLanguage === 'EN' ? 'Through jewelry, I weave a link between artisanal mastery, sensitive creativity, and sincere listening.' :
-                    currentLanguage === 'FR' ? '   travers la joaillerie, je tisse un lien entre ma trise artisanale, créativité sensible et coute sincère.' :
-                    'Através da joalheria, teço um elo entre a maestria artesanal, criatividade sensível e escuta sincera.'}
+                    currentLanguage === 'FR' ? 'À travers la joaillerie, je tisse un lien entre maîtrise artisanale, créativité sensible et écoute sincère.' :
+                    'Através das joias, crio um elo de ligação entre a mestria artesanal, a criatividade sensível e a escuta sincera.'}
                   </p>
                   <p className="text-justify text-teal">
                     {currentLanguage === 'EN' ? "I don't just conceive of jewelry, but of pieces that tell a story - a moment, an emotion, a story to transmit." :
-                    currentLanguage === 'FR' ? "Je ne con ois pas simplement des bijoux, mais des pi ces qui racontent quelque chose - un moment, une motion, une histoire   transmettre." :
-                    'Não concebo apenas joias, mas peças que contam uma história - um momento, uma emoção, uma história a transmitir.'}
+                    currentLanguage === 'FR' ? "Je ne conçois pas simplement des bijoux, mais des pièces qui racontent quelque chose - un moment, une émotion, une histoire à transmettre." :
+                    'Eu não crio apenas joias, mas peças que contam uma história – um momento, uma emoção, uma história para transmitir.'}
                   </p>
                   <p className="text-justify text-teal">
                     {currentLanguage === 'EN' ? 'My ambition: create jewelry that transcends time, both timeless and deeply personal.' :
-                    currentLanguage === 'FR' ? "Mon ambition : créer des bijoux qui traversent le temps,   la fois intemporels et profond ment personnels." :
-                    'Minha ambição : criar bijuterias que transcendem o tempo, tanto intemporais quanto profundamente pessoais.'}
+                    currentLanguage === 'FR' ? "Mon ambition : créer des bijoux qui traversent le temps, à la fois intemporels et profondément personnels." :
+                    'Minha ambição: criar joias que resistam ao teste do tempo, sejam atemporais e profundamente pessoais.'}
                   </p>
                   <p className="text-justify text-teal">
-                    {currentLanguage === 'EN' ? 'Whether they come from a collection or are designed to measure, each piece celebrates what you have unique to express.' :
-                    currentLanguage === 'FR' ? "Qu'ils soient issus d une collection ou pens s sur mesure, chaque bijou c l bre ce que vous avez d unique   exprimer." :
-                    'Sejam eles provenientes de uma coleção ou feitas sob medida, cada peça celebra o que você tem único a expressar.'}
+                    {currentLanguage === 'EN' ? 'Whether they come from a collection or are designed to measure, each piece celebrates what you have unique to express. »' :
+                    currentLanguage === 'FR' ? "Qu'ils soient issus d'une collection ou pensés sur mesure, chaque bijou célèbre ce que vous avez d'unique à exprimer. »" :
+                    'Sejam eles provenientes de uma coleção ou feitas sob medida, cada peça celebra o que você tem único a expressar. »'}
                   </p>
                 </div>
 
